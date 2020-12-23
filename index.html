@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>移动端商城</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<script>
+	    window.onload = window.onresize = function(){
+	        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+	        var _html = document.getElementsByTagName('html')[0];
+	        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+	    }
+	</script>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<span class="iconfont icon-arrowLeft-fill fl"></span>
+			<h6 class="fl">Woman, Dresses</h6>
+			<span class="iconfont icon-gouwuche fr">
+				<i>3</i>
+			</span>
+		</div>
+		<div class="btn clearfix">
+			<a href="#" class="fl btn1">add to wishlist</a>
+			<a href="#" class="fr btn2">add to cart</a>
+		</div>
+	</header>
+	<!-- 轮播图 -->
+	<div class="bn">
+		<div class="banner">
+			<div>
+				<img src="./images/img.jpg" alt="">
+			</div>
+			<div class="text_btn">
+				<p>Elegant Pink Dresses</p>
+				<a href="#">$605,00</a>
+			</div>
+		</div>
+	</div>
+	<div class="jia">
+		<span class="iconfont icon-jiahao"></span>
+		<p>Description</p>
+	</div>
+	<!-- Colour -->
+	<div class="Colour clearfix">
+		<div class="c1">
+			<span><img src="./images/img2.jpg" alt=""></span>
+			<h5>Colour:</h5>
+		</div>
+		<div class="text_c">
+			<p>Choose a colour for item</p>
+		</div>
+		<div class="box">
+			<div class="box1">
+				<span class="iconfont icon-duigouxiao"></span>
+			</div>
+			<div class="box2">
+				<span></span>
+			</div>
+			<div class="box3">
+				<span></span>
+			</div>
+		</div>
+		<hr class="xian">
+		<div class="c1">
+			<span><img src="./images/img3.jpg" alt=""></span>
+			<h5>Size:</h5>
+		</div>
+		<div class="text_c">
+			<p>Size available for this item</p>
+		</div>
+		<div class="box">
+			<div class="box4">
+				6
+			</div>
+			<div class="box5">
+				8
+			</div>
+			<div class="box6">
+				10
+			</div>
+			<div class="box7">
+				12
+			</div>
+			<div class="box8">
+				14
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer_btn">
+			<a href="#">Add to Cart</a>
+		</div>
+		<div class="share">
+			<p>SHARE ON</p> <hr class="chang">
+		</div>
+		<div class="san">
+			<div class="s1">
+				<div class="s11">
+					<span class="iconfont icon-14"></span>
+					<div class="tp"><p>255</p></div>
+				</div>
+			</div>
+			<div class="s2">
+				<div class="s22">
+					<span class="iconfont icon-weibiaoti502"></span>
+					<div class="tp"><p>255</p></div>
+				</div>
+			</div>
+			<div class="s3">
+				<div class="s33">
+					<span class="iconfont icon-xiazai16"></span>
+					<div class="tp"><p>255</p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
